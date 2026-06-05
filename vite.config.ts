@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/lotto-pro-gen/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
