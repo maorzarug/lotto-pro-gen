@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Heebo", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Clear, highly readable scaling */
+html {
+  font-size: 110% !important; /* Larger default root text (approx. 17.6px) for ultimate readability */
+  background-color: #070a13 !important;
+}
+
+/* Warm deep matte night-sky base */
+body {
+  background-color: #070a13 !important;
+  color: #f1f5f9 !important; /* Soft white/slate-100 for perfect eye comfort */
+  font-family: var(--font-sans);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+  line-height: 1.6;
+}
+
+/* Smooth, high-contrast scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070a13;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* High contrast & Friendly color overrides for indicators */
+.text-cyan-400 {
+  color: #38bdf8 !important; /* Radiant sky-blue */
+}
+.text-emerald-400 {
+  color: #34d399 !important; /* Bright emerald green for high luck and statistical balance */
+}
+.text-amber-400 {
+  color: #fbbf24 !important; /* Warm amber for hot numbers */
+}
+.text-purple-400 {
+  color: #c084fc !important; /* Cozy lilac/purple for Extra numbers */
+}
+.text-rose-450 {
+  color: #f43f5e !important; /* True rose pink */
+}
+
+/* Clean up cards and remove intimidating box-shadow and lines */
+.bg-\[\#0f1422\], .bg-\[\#090d18\], .bg-\[\#0a0f1d\], .bg-\[\#0f1420\], .bg-[#0f1422], .bg-[#090d18], .bg-[#0a0f1d] {
+  background-color: #0f172a !important; /* Cozy slate-900 canvas */
+  border: 1.5px solid #1e293b !important; /* Soft, warm border line (no rough bright white dashboard) */
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 1.25rem !important;
+}
+
+/* Sturdy nested sections (like manual inputs, code bars) */
+.bg-\[\#0a0d14\], .bg-\[\#111622\], .bg-\[\#121622\], .bg-\[\#151b2a\], .bg-[#0a0d14], .bg-[#111622], .bg-black\/40, .bg-black\/30 {
+  background-color: #070a13 !important; /* deeper background contrast */
+  border: 1.5px solid #1e293b !important;
+  border-radius: 1rem !important;
+}
+
+/* Select element overrides for effortless reading */
+select {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+  border: 1.5px solid #334155 !important;
+  border-radius: 0.75rem !important;
+  padding: 0.6rem 2.5rem 0.6rem 1rem !important;
+  font-weight: 700 !important;
+}
+select:focus {
+  border-color: #38bdf8 !important;
+  outline: none !important;
+}
+
+/* Custom gorgeous lottery balls - bright white with perfect dark text */
+span.font-extrabold.text-slate-100,
+span.text-slate-100,
+span.font-extrabold.text-slate-200,
+span.text-slate-200 {
+  background: #ffffff !important; /* Clear pristine pure white sphere */
+  color: #0f172a !important; /* Perfect midnight contrast */
+  border: 2px solid #38bdf8 !important; /* Glowing turquoise border */
+  font-family: var(--font-sans) !important;
+  font-weight: 900 !important;
+  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.2) !important;
+  text-shadow: none !important;
+}
+
+/* Custom red strong ball (מספר חזק) - glowing warm rose circle */
+span.text-rose-400,
+span.bg-rose-500\/10.border-rose-500\/30 {
+  background: linear-gradient(135deg, #f43f5e, #be123c) !important; /* Vibrant fire-rose gradient */
+  color: #ffffff !important;
+  border: 2px solid #fda4af !important; /* clear accessible border */
+  font-weight: 900 !important;
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.3) !important;
+}
+
+/* Layout scale improvements */
+button {
+  font-weight: 800 !important;
+  border-radius: 0.75rem !important;
+}
+
+/* Clean, friendly, non-intimidating buttons for algorithms select */
+button.border-white\/5,
+button.border-white\/10 {
+  border-color: #1e293b !important;
+}
+
+/* Active buttons styling */
+button.bg-gradient-to-r.from-cyan-500.to-indigo-600,
+.bg-gradient-to-r.from-cyan-500.to-indigo-600 {
+  background: linear-gradient(135deg, #0284c7, #4f46e5) !important;
+  color: #ffffff !important;
+  border: 1.5px solid #38bdf8 !important;
+}
+
+/* Super cozy and readable text scales - scaled up globally for effortless reading */
+.text-\[9px\] {
+  font-size: 0.85rem !important; /* Scale up minuscule text to be readable */
+}
+.text-\[10px\] {
+  font-size: 0.9rem !important; /* Scale up small captions */
+}
+.text-xs {
+  font-size: 0.95rem !important; /* Standard small text is now extremely clear */
+}
+.text-sm {
+  font-size: 1.05rem !important; /* Standard content runs chunky and cosy */
+}
+.text-base {
+  font-size: 1.18rem !important; /* Headings are proud and highly contrasting */
+}
+.text-lg {
+  font-size: 1.32rem !important;
+}
+.text-xl {
+  font-size: 1.55rem !important;
+}
+.text-2xl {
+  font-size: 1.9rem !important;
+}
+
+/* Tab Navigation container */
+nav {
+  background-color: #0f172a !important;
+  border: 1.5px solid #1e293b !important;
+  border-radius: 1rem !important;
+}
+nav button {
+  color: #94a3b8 !important;
+}
+nav button:hover {
+  color: #f1f5f9 !important;
+}
+
+/* Clean up footer styles */
+footer {
+  background-color: #070a13 !important;
+  border-top: 1.5px solid #1e293b !important;
+}
+
+/* Accessibility mode scaling */
+.large-text-layout {
+  font-size: 115% !important;
+}
+.large-text-layout p,
+.large-text-layout span,
+.large-text-layout label {
+  font-size: 1.15rem !important;
+  line-height: 1.7 !important;
+}
+.large-text-layout h1 {
+  font-size: 2rem !important;
+}
+.large-text-layout h2 {
+  font-size: 1.6rem !important;
+}
+.large-text-layout h3,
+.large-text-layout h4 {
+  font-size: 1.4rem !important;
+}
